@@ -42,18 +42,11 @@ The development environment uses the `skysider/pwndocker` image, which is preloa
 2. **Open the Dev Container**:
    - Open the VS Code Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`).
    - Run `Dev Containers: Reopen in Container`.
-   - VS Code will build the Docker container based on `Dockerfile`, set up a Python virtual environment, install dependencies from `requirements.txt`, and configure the Python extension.
    - **IT IS EXPECTED TO TAKE A WHILE TO INSTALL THE FIRST TIME!**
-
-3. **Verify the Setup**:
-   - Once the container is running, open a terminal in VS Code (`Terminal > New Terminal`). You should see the Python virtual environment activated (e.g., `(.venv)` in the prompt).
-   - Check the Python interpreter, it should point to `/ctf/py/.venv/bin/python`.
 
 ### 4. Project Structure
 
 - **`.devcontainer/devcontainer.json`**: Configures the VS Code Dev Container, including the Python extension, virtual environment, and workspace settings.
-- **`Dockerfile`**: Defines the Docker image, sets up the Python virtual environment, and installs dependencies from `requirements.txt`.
-- **`requirements.txt`**: Lists Python packages (e.g., `pwntools`) required for exploit development.
 - **`/ctf/work/`**: Your workspace directory, mapped to your local project folder, where you can add exploit scripts and challenges.
 
 ### 5. Writing Your First Exploit
@@ -72,9 +65,9 @@ The development environment uses the `skysider/pwndocker` image, which is preloa
      ```
 
 2. **Run Your Script**:
-   - In the VS Code terminal (with the venv activated), run:
+   - In the VS Code terminal, run:
      ```bash
-     python exploit.py
+     python3 exploit.py
      ```
    - Use VS Code’s debugger or terminal to interact with your exploit.
 
@@ -88,14 +81,9 @@ The development environment uses the `skysider/pwndocker` image, which is preloa
      pwn checksec ./binary
      ```
 
-### 6. Troubleshooting
-
-- **Virtual Environment Issues**:
-  - If the venv doesn’t activate, ensure `.venv` is created at `/ctf/py/.venv` and the path in `devcontainer.json` matches (`/ctf/py/.venv/bin/python`).
-  - Run `source /ctf/py/.venv/bin/activate` manually in a terminal to test.
-
 ### 7. Additional Resources
 
+- **Base Image**: The corresponding Dockerfile can be found [here](https://github.com/skysider/pwndocker/blob/master/Dockerfile).
 - **Pwntools Cheatsheet**: To get you started with pwntools see [this cheatsheet](https://gist.github.com/anvbis/64907e4f90974c4bdd930baeb705dedf).
 - **VS Code Dev Containers**: See [Developing inside a Container](https://code.visualstudio.com/docs/devcontainers/containers) for advanced configuration.
 

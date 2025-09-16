@@ -1,8 +1,0 @@
-# Required for COMP6447 work.
-pwntools
-ropgadget
-ropper
-
-# # Utilities
-# black==23.9.1 # Python Formatter
-# tqdm==4.66.1 # Pretty Progress Bars
