@@ -22,7 +22,7 @@ git clone https://github.com/abe123442/6447-starter mypwnlab
 cd mypwnlab
 ```
 
-### Open in VSCode
+### Open in VS Code
 
 ```bash
 code .
@@ -35,11 +35,6 @@ The development environment uses the `skysider/pwndocker` image, which is preloa
 - Open the VS Code Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`).
 - Run `Dev Containers: Reopen in Container`.
 > **IT IS EXPECTED TO TAKE A WHILE TO INSTALL THE FIRST TIME!**
-
-### Project Structure
-
-- **`.devcontainer/devcontainer.json`**: Configures the VS Code Dev Container, including the Python extension, virtual environment, and workspace settings.
-- **`/ctf/work/`**: Your workspace directory, mapped to your local project folder, where you can add exploit scripts and challenges.
 
 ### Writing Your First Exploit
 
