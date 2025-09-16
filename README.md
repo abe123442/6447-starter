@@ -43,12 +43,11 @@ The development environment uses the `skysider/pwndocker` image, which is preloa
    - Open the VS Code Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`).
    - Run `Dev Containers: Reopen in Container`.
    - VS Code will build the Docker container based on `test.Dockerfile`, set up a Python virtual environment, install dependencies from `requirements.txt`, and configure the Python extension.
-   - IT IS EXPECTED TO TAKE A WHILE TO INSTALL THE FIRST TIME!
+   - **IT IS EXPECTED TO TAKE A WHILE TO INSTALL THE FIRST TIME!**
 
 3. **Verify the Setup**:
    - Once the container is running, open a terminal in VS Code (`Terminal > New Terminal`). You should see the Python virtual environment activated (e.g., `(.venv)` in the prompt).
-   - Check the Python interpreter in the bottom-left corner of VS Code—it should point to `/ctf/work/.venv/bin/python`.
-   - Run `python --version` and `pwntools` (or other tools) to confirm they’re installed.
+   - Check the Python interpreter, it should point to `/ctf/py/.venv/bin/python`.
 
 ### 4. Project Structure
 
