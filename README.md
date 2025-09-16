@@ -42,7 +42,7 @@ The development environment uses the `skysider/pwndocker` image, which is preloa
 2. **Open the Dev Container**:
    - Open the VS Code Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`).
    - Run `Dev Containers: Reopen in Container`.
-   - VS Code will build the Docker container based on `test.Dockerfile`, set up a Python virtual environment, install dependencies from `requirements.txt`, and configure the Python extension.
+   - VS Code will build the Docker container based on `Dockerfile`, set up a Python virtual environment, install dependencies from `requirements.txt`, and configure the Python extension.
    - **IT IS EXPECTED TO TAKE A WHILE TO INSTALL THE FIRST TIME!**
 
 3. **Verify the Setup**:
@@ -52,7 +52,7 @@ The development environment uses the `skysider/pwndocker` image, which is preloa
 ### 4. Project Structure
 
 - **`.devcontainer/devcontainer.json`**: Configures the VS Code Dev Container, including the Python extension, virtual environment, and workspace settings.
-- **`test.Dockerfile`**: Defines the Docker image, sets up the Python virtual environment, and installs dependencies from `requirements.txt`.
+- **`Dockerfile`**: Defines the Docker image, sets up the Python virtual environment, and installs dependencies from `requirements.txt`.
 - **`requirements.txt`**: Lists Python packages (e.g., `pwntools`) required for exploit development.
 - **`/ctf/work/`**: Your workspace directory, mapped to your local project folder, where you can add exploit scripts and challenges.
 
